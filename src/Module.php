@@ -1,18 +1,17 @@
 <?php
 
-namespace ZfSnapPhpDebugBar;
+namespace PhpDebugBar;
 
 use DebugBar\DataCollector\MessagesCollector;
 use RuntimeException;
-use Zend\EventManager\EventInterface;
-use Zend\Http\PhpEnvironment\Request;
-use Zend\ModuleManager\Feature\BootstrapListenerInterface as Bootstrap;
-use Zend\ModuleManager\Feature\ConfigProviderInterface;
-use Zend\Mvc\Application;
-use Zend\ServiceManager\ServiceLocatorAwareInterface;
-use ZfSnapPhpDebugBar\Listener\MeasureListener;
-use ZfSnapPhpDebugBar\Listener\RenderOnShutdownListener;
-use ZfSnapPhpDebugBar\Listener\RouteListener;
+use Laminas\EventManager\EventInterface;
+use Laminas\Http\PhpEnvironment\Request;
+use Laminas\ModuleManager\Feature\BootstrapListenerInterface as Bootstrap;
+use Laminas\ModuleManager\Feature\ConfigProviderInterface;
+use Laminas\Mvc\Application;
+use PhpDebugBar\Listener\MeasureListener;
+use PhpDebugBar\Listener\RenderOnShutdownListener;
+use PhpDebugBar\Listener\RouteListener;
 
 /**
  * @author Witold Wasiczko <witold@wasiczko.pl>
@@ -32,10 +31,8 @@ final class Module implements ConfigProviderInterface, Bootstrap
     {
         $baseConfig = include __DIR__ . '/../config/zfsnapphpdebugbar.config.php';
 
-        if (!interface_exists(ServiceLocatorAwareInterface::class)) {
-            $zf3AliasesConfig = include __DIR__ . '/../config/aliases.config.php';
-            $baseConfig = array_merge_recursive($baseConfig, $zf3AliasesConfig);
-        }
+        $zf3AliasesConfig = include __DIR__ . '/../config/aliases.config.php';
+        $baseConfig = array_merge_recursive($baseConfig, $zf3AliasesConfig);
 
         return $baseConfig;
     }

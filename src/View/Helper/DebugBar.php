@@ -1,11 +1,11 @@
 <?php
 
-namespace ZfSnapPhpDebugBar\View\Helper;
+namespace PhpDebugBar\View\Helper;
 
 use DebugBar\JavascriptRenderer;
-use Zend\View\Helper\AbstractHelper;
-use Zend\View\Helper\HeadLink;
-use Zend\View\Helper\HeadScript;
+use Laminas\View\Helper\AbstractHelper;
+use Laminas\View\Helper\HeadLink;
+use Laminas\View\Helper\HeadScript;
 
 /**
  * @author Witold Wasiczko <witold@wasiczko.pl>

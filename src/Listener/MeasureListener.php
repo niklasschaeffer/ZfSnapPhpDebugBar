@@ -1,13 +1,13 @@
 <?php
 
-namespace ZfSnapPhpDebugBar\Listener;
+namespace PhpDebugBar\Listener;
 
 use DebugBar\DataCollector\TimeDataCollector;
-use Zend\EventManager\AbstractListenerAggregate;
-use Zend\EventManager\EventInterface;
-use Zend\EventManager\EventManagerInterface;
-use Zend\View\Model\ModelInterface;
-use Zend\View\ViewEvent;
+use Laminas\EventManager\AbstractListenerAggregate;
+use Laminas\EventManager\EventInterface;
+use Laminas\EventManager\EventManagerInterface;
+use Laminas\View\Model\ModelInterface;
+use Laminas\View\ViewEvent;
 
 /**
  * @author witold

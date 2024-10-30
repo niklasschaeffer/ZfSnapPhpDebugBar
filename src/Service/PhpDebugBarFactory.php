@@ -1,16 +1,16 @@
 <?php
 
-namespace ZfSnapPhpDebugBar\Service;
+namespace PhpDebugBar\Service;
 
 use DebugBar\DataCollector\ConfigCollector;
 use DebugBar\DataCollector\PDO\PDOCollector;
 use DebugBar\DataCollector\PDO\TraceablePDO;
 use DebugBar\DebugBar;
 use Interop\Container\ContainerInterface;
-use Zend\Db\Adapter\AdapterInterface;
-use Zend\Db\Adapter\Driver\Pdo\Pdo;
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\Db\Adapter\AdapterInterface;
+use Laminas\Db\Adapter\Driver\Pdo\Pdo;
+use Laminas\ServiceManager\Factory\FactoryInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 
 /**
  * @author Witold Wasiczko <witold@wasiczko.pl>

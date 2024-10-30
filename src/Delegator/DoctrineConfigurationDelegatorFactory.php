@@ -1,10 +1,10 @@
 <?php
 
-namespace ZfSnapPhpDebugBar\Delegator;
+namespace PhpDebugBar\Delegator;
 
 use Interop\Container\ContainerInterface;
-use Zend\ServiceManager\DelegatorFactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\ServiceManager\Factory\DelegatorFactoryInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 use Doctrine\DBAL\Logging\DebugStack;
 
 class DoctrineConfigurationDelegatorFactory implements DelegatorFactoryInterface

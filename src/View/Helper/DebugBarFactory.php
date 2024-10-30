@@ -1,12 +1,12 @@
 <?php
 
-namespace ZfSnapPhpDebugBar\View\Helper;
+namespace PhpDebugBar\View\Helper;
 
 use DebugBar\DebugBar;
-use ZfSnapPhpDebugBar\View\Helper\DebugBar as DebugBarHelper;
+use PhpDebugBar\View\Helper\DebugBar as DebugBarHelper;
 use Interop\Container\ContainerInterface;
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\ServiceManager\Factory\FactoryInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 
 /**
  * @author Witold Wasiczko <witold@wasiczko.pl>

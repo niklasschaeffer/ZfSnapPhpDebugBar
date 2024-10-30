@@ -1,12 +1,12 @@
 <?php
 
-namespace ZfSnapPhpDebugBar\Listener;
+namespace PhpDebugBar\Listener;
 
 use DebugBar\JavascriptRenderer;
-use Zend\EventManager\AbstractListenerAggregate;
-use Zend\EventManager\EventManagerInterface;
-use Zend\Http\Response;
-use Zend\Mvc\MvcEvent;
+use Laminas\EventManager\AbstractListenerAggregate;
+use Laminas\EventManager\EventManagerInterface;
+use Laminas\Http\Response;
+use Laminas\Mvc\MvcEvent;
 
 /**
  * @author witold

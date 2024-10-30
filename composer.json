@@ -1,11 +1,10 @@
 {
-    "name": "snapshotpl/zf-snap-php-debug-bar",
-    "description": "PHP Debug Bar module for Zend Framework 2",
+    "name": "niklasshaeffer/php-debug-bar",
+    "description": "PHP Debug Bar module for Laminas",
     "keywords": [
         "debugbar",
         "zf2",
-        "zend framework",
-        "zend framework 2",
+        "laminas",
         "debug",
         "exception",
         "log",
@@ -13,33 +12,43 @@
     ],
     "authors": [
         {
-            "name": "Witold Wasiczko",
-            "email": "witold@wasiczko.pl",
-            "homepage": "http://www.psd2html.pl/"
+            "name": "Niklas Schäffer",
+            "email": "niklass.schaeffer@gmail.com",
+            "homepage": "https://nickey.dev"
         }
     ],
     "require": {
-        "php": "^5.6 || ^7.0",
+        "php": "~8.0.0 || ~8.1.0",
+        "ext-curl": "*",
+        "ext-dom": "*",
+        "ext-fileinfo": "*",
+        "ext-iconv": "*",
+        "ext-json": "*",
+        "ext-libxml": "*",
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "ext-pdo": "*",
+        "ext-simplexml": "*",
+        "ext-soap": "*",
         "maximebf/debugbar": "^1.10",
-        "zendframework/zend-mvc": "^2.4 || ^3.0",
-        "zendframework/zend-log": "^2.4",
-        "zendframework/zend-servicemanager": "^2.6 || ^3.0",
-        "zendframework/zend-view": "^2.4",
-        "zendframework/zend-eventmanager": "^2.4 || ^3.0",
-        "zendframework/zend-http": "^2.4",
-        "zendframework/zend-modulemanager": "^2.4"
+        "laminas/laminas-mvc": "3.7.0",
+        "laminas/laminas-log": "^2.16",
+        "laminas/laminas-servicemanager": "^3.20",
+        "laminas/laminas-view": "^2.27",
+        "laminas/laminas-eventmanager": "^3.11",
+        "laminas/laminas-http": "^2.18",
+        "laminas/laminas-modulemanager": "^2.14",
+        "doctrine/dbal": "^2.13"
     },
     "require-dev": {
-        "phpunit/phpunit": "^5.7.25 || ^6.5.5",
-        "zendframework/zend-test": "^2.4 || ^3.0",
-        "zendframework/zend-config": "^2.4",
-        "zendframework/zend-serializer": "^2.4",
-        "zendframework/zend-i18n": "^2.4",
-        "zendframework/zend-db": "^2.4"
+        "phpunit/phpunit": "^9.5",
+        "laminas/laminas-config-aggregator": "^1.13",
+        "laminas/laminas-serializer": "^2.17",
+        "laminas/laminas-db": "^2.18"
     },
     "autoload": {
         "psr-4": {
-            "ZfSnapPhpDebugBar\\": "src/"
+            "PhpDebugBar\\": "src/"
         },
         "files": [
             "src/Functions.php"
@@ -47,7 +56,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "ZfSnapPhpDebugBar\\Tests\\": "tests/"
+            "PhpDebugBar\\Tests\\": "tests/"
         }
     },
     "scripts": {

@@ -1,6 +1,6 @@
 <?php
 
-use ZfSnapPhpDebugBar\Module;
+use PhpDebugBar\Module;
 
 if (!function_exists('debugbar_log')) {
     /**

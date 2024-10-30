@@ -1,13 +1,13 @@
 <?php
 
-namespace ZfSnapPhpDebugBar\Listener;
+namespace PhpDebugBar\Listener;
 
 use DebugBar\DataCollector\ExceptionsCollector;
 use Exception;
-use Zend\EventManager\AbstractListenerAggregate;
-use Zend\EventManager\EventInterface;
-use Zend\EventManager\EventManagerInterface;
-use ZfSnapPhpDebugBar\Exception\ThrowableException;
+use Laminas\EventManager\AbstractListenerAggregate;
+use Laminas\EventManager\EventInterface;
+use Laminas\EventManager\EventManagerInterface;
+use PhpDebugBar\Exception\ThrowableException;
 
 /**
  * @author witold
@@ -34,7 +34,7 @@ final class ExceptionListener extends AbstractListenerAggregate
         if ($exception instanceof Exception || $exception instanceof \Throwable) {
             $exception = $exception instanceof \Throwable ? new ThrowableException($exception) : $exception;
 
-            $this->exceptionsCollector->addException($exception);
+            $this->exceptionsCollector->addThrowable($exception);
         }
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZfSnapPhpDebugBar\Exception;
+namespace PhpDebugBar\Exception;
 
 use Exception;
 

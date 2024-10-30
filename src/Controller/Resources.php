@@ -1,8 +1,8 @@
 <?php
 
-namespace ZfSnapPhpDebugBar\Controller;
+namespace PhpDebugBar\Controller;
 
-use Zend\Mvc\Controller\AbstractActionController;
+use Laminas\Mvc\Controller\AbstractActionController;
 
 /**
  * @author Witold Wasiczko <witold@wasiczko.pl>

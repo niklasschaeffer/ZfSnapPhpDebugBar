@@ -1,11 +1,11 @@
 <?php
 
-namespace ZfSnapPhpDebugBar\Collector;
+namespace PhpDebugBar\Collector;
 
 use Interop\Container\ContainerInterface;
 use DebugBar\Bridge\DoctrineCollector;
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\ServiceManager\Factory\FactoryInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 
 class DoctrineCollectorFactory implements FactoryInterface
 {

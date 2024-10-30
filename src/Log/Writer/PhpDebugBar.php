@@ -1,9 +1,9 @@
 <?php
 
-namespace ZfSnapPhpDebugBar\Log\Writer;
+namespace PhpDebugBar\Log\Writer;
 
 use DebugBar\DataCollector\MessagesCollector;
-use Zend\Log\Writer\AbstractWriter;
+use Laminas\Log\Writer\AbstractWriter;
 
 /**
  * @author Witold Wasiczko <witold@wasiczko.pl>
