@@ -11,7 +11,7 @@ foreach ($zf3Modules as $module) {
         $modules[] = $module;
     }
 }
-$modules[] = 'ZfSnapPhpDebugBar';
+$modules[] = 'PhpDebugBar';
 
 return [
     'modules' => $modules,

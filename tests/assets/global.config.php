@@ -2,7 +2,7 @@
 return [
     'controllers' => [
         'invokables' => [
-            ZfSnapPhpDebugBar\Tests\Functional\DummyController::class => ZfSnapPhpDebugBar\Tests\Functional\DummyController::class,
+            PhpDebugBar\Tests\Functional\DummyController::class => PhpDebugBar\Tests\Functional\DummyController::class,
         ],
     ],
     'php-debug-bar' => [
@@ -19,7 +19,7 @@ return [
                 'options' => [
                     'route' => '/',
                     'defaults' => [
-                        'controller' => ZfSnapPhpDebugBar\Tests\Functional\DummyController::class,
+                        'controller' => PhpDebugBar\Tests\Functional\DummyController::class,
                         'action' => 'index',
                     ],
                 ],
@@ -29,7 +29,7 @@ return [
                 'options' => [
                     'route' => '/error',
                     'defaults' => [
-                        'controller' => ZfSnapPhpDebugBar\Tests\Functional\DummyController::class,
+                        'controller' => PhpDebugBar\Tests\Functional\DummyController::class,
                         'action' => 'error',
                     ],
                 ],
@@ -38,7 +38,7 @@ return [
     ],
     'service_manager' => [
         'factories' => [
-            Zend\Db\Adapter\Adapter::class => Zend\Db\Adapter\AdapterServiceFactory::class,
+            Laminas\Db\Adapter\Adapter::class => Laminas\Db\Adapter\AdapterServiceFactory::class,
         ],
     ],
     'view_manager' => [
